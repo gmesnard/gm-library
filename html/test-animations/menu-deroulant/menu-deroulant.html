@@ -1,0 +1,168 @@
+<html>
+<head>
+  <style>
+  body {
+    margin-top: 50px;
+  }
+  ul {
+    font-size: 12px;
+    margin: 0 0 0 160px;
+  }
+  ul li {
+    font-weight: 600;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  ul a {
+    background: #fff;
+    border: 0 solid #39c;
+    display: block;
+    position: relative;
+    z-index: 600;
+    color: #333;
+    text-decoration: none;
+    transition: border-width .4s ease-in;
+  }
+  ul span {
+    border-top: 35px solid #fff;
+    display: block;
+    margin: 0 30px;
+    padding: 0 5px;
+    height: 29px;
+  }
+  .active span {
+    border-bottom: 4px solid #39c;
+    height: 25px;
+  }
+  ul ul {
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    z-index: 599;
+    left: 0;
+    margin: 0;
+    height: auto;
+    padding: 0;
+    opacity: 1;
+    transition: all .4s ease;
+  }
+  .js ul ul {
+    display: block;
+    left: 0px;
+    top: -20px;
+    opacity: 0;
+    height: 0;
+  }
+  .js li > a:hover {
+    border-width: 0 0 4px;
+    color: #39c;
+  }
+  .js li > a:hover span {
+    border-bottom-width: 0;
+    height: 25px;
+  }
+  .js li > a:hover + ul,
+  .js li > a:focus + ul,
+  .js ul ul:hover {
+    height: auto;
+    top: 64px;
+    opacity: 1;
+  }
+  li li {
+    background: #f4f4f4;
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #fff;
+    display: block;
+    height: 31px;
+    float: left;
+    width: 100%;
+    line-height: 31px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: none;
+  }
+  li li a {
+    background: transparent;
+    border: none;
+    color: #666;
+    padding-bottom: 0;
+  }
+
+  .logo img {
+    -webkit-mask: -webkit-gradient(radial, 17 17, 123, 17 17, 138, from(rgb(0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, 0.2)), to(rgb(0, 0, 0)));
+    transition: all .4s ease;
+  }
+  .logo:hover img,
+  .logo img:hover {
+    -webkit-mask: -webkit-gradient(radial, 17 17, 0, 17 17, 0, from(rgb(0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, 0.2)), to(rgb(0, 0, 0)));
+  }
+  </style>
+</head>
+<body class="js">
+
+  <h1>Effets Full CSS !!</h1>
+
+<a href="#" class="logo">
+<img alt="Chrome" id="logo" src="//tools.google.com/chrome/intl/en/images/chrome-canary-lockup.png" style="">
+</a>
+
+<ul class="" id="nav" role="menubar">
+  <li class="g-unit current active">
+    <a aria-haspopup="true" href="#" id="browser-menu" role="menuitem"><span data-g-event="nav-dropdown" data-g-label="browser-home">Browser</span></a>
+    <ul aria-labelledby="browser-menu" role="menu" style="">
+      <li>
+        <a data-g-event="nav-dropdown" data-g-label="browser-download" href="#">Download</a>
+      </li>
+      <li>
+        <a data-g-event="nav-dropdown" data-g-label="browser-features" href="#">Features</a>
+      </li>
+      <li>
+        <a data-g-event="nav-dropdown" data-g-label="browser-mobile" href="#">Mobile</a>
+      </li>
+      <li>
+        <a data-g-event="nav-dropdown" data-g-label="browser-gallery" href="#">Gallery</a>
+      </li>
+      <li>
+        <a data-g-event="nav-dropdown" data-g-label="browser-support" href="#">Support</a>
+      </li>
+    </ul>
+  </li>
+  <li class="g-unit">
+    <a aria-haspopup="true" href="#" id="browser-menu" role="menuitem"><span data-g-event="nav-dropdown" data-g-label="browser-home">Menu 2</span></a>
+    <ul aria-labelledby="browser-menu" role="menu" style="">
+      <li>
+        <a data-g-event="nav-dropdown" data-g-label="browser-download" href="#">Download</a>
+      </li>
+      <li>
+        <a data-g-event="nav-dropdown" data-g-label="browser-features" href="#">Features</a>
+      </li>
+    </ul>
+  </li>
+  <li class="g-unit">
+    <a aria-haspopup="true" href="#" id="browser-menu" role="menuitem"><span data-g-event="nav-dropdown" data-g-label="browser-home">Menu3</span></a>
+    <ul aria-labelledby="browser-menu" role="menu" style="">
+      <li>
+        <a data-g-event="nav-dropdown" data-g-label="browser-download" href="#">Download</a>
+      </li>
+      <li>
+        <a data-g-event="nav-dropdown" data-g-label="browser-features" href="#">Features</a>
+      </li>
+      <li>
+        <a data-g-event="nav-dropdown" data-g-label="browser-mobile" href="#">Mobile</a>
+      </li>
+      <li>
+        <a data-g-event="nav-dropdown" data-g-label="browser-gallery" href="#">Gallery</a>
+      </li>
+      <li>
+        <a data-g-event="nav-dropdown" data-g-label="browser-support" href="#">Support</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+</body>
+</html>

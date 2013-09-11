@@ -1,0 +1,42 @@
+.page {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.page1 {
+    background: #f00;
+}
+.page2 {
+    background: #0f0;
+}
+.page3 {
+    background: #00f;
+}
+.page4 {
+    background: #ff0;
+}
+.page5 {
+    background: #0ff;
+}
+.intro {
+    background: #ccc;
+}
+.choice-button {
+    height: 30px;
+    width: 200px;
+}
+#intro{z-index:2;background-color:#66b6cd;border-top:1px solid #66b6cd;top:0}
+#page1,#page2,#page3,#page4,#page5{border-top:1px solid #fff;float:left}
+
+
+#choices-view{overflow:hidden;margin:0 auto;position:absolute}
+#choices-container{position:absolute}
+
+#choice1-view .view-heading,#choice2-view-left .view-heading,#choice2-view-right .view-heading,#choice3-view .view-heading{margin-top:100px}
+#choice1-view .view-heading{width:550px}
+#choice2-view-left .view-heading,#choice2-view-right .view-heading{width:1100px}
+#choice3-view .view-heading{width:550px}
+.choice-div{*zoom:1;width:40%;margin-left:4%;margin-right:4%;height:100%;float:left}
+.choice-div:before,.choice-div:after{display:table;content:"";line-height:0}
+.choice-div:after{clear:both}
+.choice-div .explain{padding:1.3em;color:#999;text-align:center}
